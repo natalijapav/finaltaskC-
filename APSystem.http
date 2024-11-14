@@ -1,0 +1,6 @@
+@APSystem_HostAddress = http://localhost:5192
+
+GET {{APSystem_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
