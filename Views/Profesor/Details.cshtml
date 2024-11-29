@@ -1,0 +1,42 @@
+﻿@model APISystem.Entity.Profesor
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Profesor</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Departmant)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Departmant.DepartmantId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OsobaIme)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OsobaIme)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OsobaPrezime)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OsobaPrezime)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.GodinaRodjenja)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GodinaRodjenja)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.OsobaId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

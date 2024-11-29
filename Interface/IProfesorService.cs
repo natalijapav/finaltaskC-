@@ -1,4 +1,5 @@
 ﻿using APISystem.Entity;
+using UniAPISystem.DtoModels;
 
 namespace UniAPISystem.Interface
 {
@@ -10,5 +11,6 @@ namespace UniAPISystem.Interface
         Task DeleteProfesorAsync(int id);
         Task<Profesor> GetProfesorByIdAsync(int id);
         Task<IEnumerable<Profesor>> GetAllProfesoriAsync();
+        Task AddProfesorAsync(ProfesorCreateDto profesorDto);
     }
 }

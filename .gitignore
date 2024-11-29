@@ -4,6 +4,7 @@ obj/
 *.log
 *.dll
 *.json
+*.cshtml
 
 appsettings.json
 appsettings.Development.json

@@ -1,13 +1,17 @@
 ﻿using APISystem.Entity;
+using APSystem.Entity;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.Design;
+using UniAPISystem.DtoModels;
 using UniAPISystem.Interface;
 
-namespace UniAPISystem.Services
+namespace UniAPISystem.Models
 {
     public class ProfesorService : IProfesorService
     {
         private readonly UniverzitetContext _context;
+        private Profesor profesor;
+        private Departmant departmant;
 
         public ProfesorService()
         {
@@ -23,6 +27,18 @@ namespace UniAPISystem.Services
         public async Task AddProfesorAsync(Profesor profesor)
         {
             await _context.Profesori.AddAsync(profesor);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task AddProfesorAsync(ProfesorCreateDto profesorDto)
+        {
+            var profesor = new Profesor
+            {
+               
+                DepartmantId = profesorDto.DepartmantId,
+            };
+
+            await _context.Departmanti.AddAsync(departmant);
             await _context.SaveChangesAsync();
         }
 
@@ -46,5 +62,7 @@ namespace UniAPISystem.Services
         {
             return await _context.Profesori.ToListAsync();
         }
+
+        
     }
 }

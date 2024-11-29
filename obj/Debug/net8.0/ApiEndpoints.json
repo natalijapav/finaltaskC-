@@ -1,1 +1,522 @@
-[]
+[
+  {
+    "ContainingType": "UniAPISystem.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDto",
+        "Type": "UniAPISystem.DtoModels.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Departmants.API.Controllers.DepartmantController",
+    "Method": "AddDepartmantAsync",
+    "RelativePath": "api/Departmant",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "departmantDto",
+        "Type": "UniAPISystem.DtoModels.DepartmantCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Departmants.API.Controllers.DepartmantController",
+    "Method": "GetAllDepartmaniAsync",
+    "RelativePath": "api/Departmant",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Departmants.API.Controllers.DepartmantController",
+    "Method": "DodajPredmetNaDepartman",
+    "RelativePath": "api/Departmant/{departmanId}/DodajPredmet/{predmetId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "departmanId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "predmetId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Departmants.API.Controllers.DepartmantController",
+    "Method": "GetDepartmanWithIdAsync",
+    "RelativePath": "api/Departmant/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Departmants.API.Controllers.DepartmantController",
+    "Method": "UpdateDepartman",
+    "RelativePath": "api/Departmant/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "departmantDto",
+        "Type": "UniAPISystem.DtoModels.DepartmantUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Departmants.API.Controllers.DepartmantController",
+    "Method": "DeleteDepartman",
+    "RelativePath": "api/Departmant/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Departmants.API.Controllers.DepartmantController",
+    "Method": "AnotherSecureEndpoint",
+    "RelativePath": "api/Departmant/another-secure-endpoint",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Departmants.API.Controllers.DepartmantController",
+    "Method": "SecureEndpoint",
+    "RelativePath": "api/Departmant/secure-endpoint",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniAPISystem.Controllers.FinansijeController",
+    "Method": "GetAllFinansijeAsync",
+    "RelativePath": "api/Finansije",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniAPISystem.Controllers.FinansijeController",
+    "Method": "AddFinansijeAsync",
+    "RelativePath": "api/Finansije",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "finansijeDto",
+        "Type": "UniAPISystem.DtoModels.FinansijeCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniAPISystem.Controllers.FinansijeController",
+    "Method": "GetFinansijeWithIdAsync",
+    "RelativePath": "api/Finansije/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniAPISystem.Controllers.KorisnikController",
+    "Method": "GetAllKorisniciAsync",
+    "RelativePath": "api/Korisnik",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniAPISystem.Controllers.KorisnikController",
+    "Method": "AddKorisnikAsync",
+    "RelativePath": "api/Korisnik",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "korisnik",
+        "Type": "APISystem.Entity.Korisnik",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniAPISystem.Controllers.KorisnikController",
+    "Method": "GetKorisnikByIdAsync",
+    "RelativePath": "api/Korisnik/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniAPISystem.Controllers.KorisnikController",
+    "Method": "UpdateKorisnikAsync",
+    "RelativePath": "api/Korisnik/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "korisnik",
+        "Type": "APISystem.Entity.Korisnik",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniAPISystem.Controllers.KorisnikController",
+    "Method": "DeleteKorisnikAsync",
+    "RelativePath": "api/Korisnik/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniAPISystem.Controllers.PredmetController",
+    "Method": "GetAllPredmeti",
+    "RelativePath": "api/Predmet",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniAPISystem.Controllers.PredmetController",
+    "Method": "CreatePredmet",
+    "RelativePath": "api/Predmet",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "predmet",
+        "Type": "APISystem.Entity.Predmet",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniAPISystem.Controllers.PredmetController",
+    "Method": "GetPredmetById",
+    "RelativePath": "api/Predmet/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniAPISystem.Controllers.PredmetController",
+    "Method": "UpdatePredmet",
+    "RelativePath": "api/Predmet/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "predmet",
+        "Type": "APISystem.Entity.Predmet",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniAPISystem.Controllers.PredmetController",
+    "Method": "DeletePredmet",
+    "RelativePath": "api/Predmet/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniAPISystem.Controllers.PredmetController",
+    "Method": "DodajProfesora",
+    "RelativePath": "api/Predmet/{predmetId}/DodajProfesora/{profesorId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "predmetId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "profesorId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniAPISystem.Controllers.ProfesorController",
+    "Method": "AddProfesorAsync",
+    "RelativePath": "api/Profesor",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "profesorDto",
+        "Type": "UniAPISystem.DtoModels.ProfesorCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniAPISystem.Controllers.ProfesorController",
+    "Method": "GetAllProfesoriAsync",
+    "RelativePath": "api/Profesor",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniAPISystem.Controllers.ProfesorController",
+    "Method": "GetProfesorWithIdAsync",
+    "RelativePath": "api/Profesor/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniAPISystem.Controllers.ProfesorController",
+    "Method": "DeleteProfesor",
+    "RelativePath": "api/Profesor/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniAPISystem.Controllers.StudentController",
+    "Method": "AddStudentAsync",
+    "RelativePath": "api/Student",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "studentDto",
+        "Type": "UniAPISystem.DtoModels.StudentCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniAPISystem.Controllers.StudentController",
+    "Method": "GetAllStudentiAsync",
+    "RelativePath": "api/Student",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniAPISystem.Controllers.StudentController",
+    "Method": "GetStudentWithIdAsync",
+    "RelativePath": "api/Student/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniAPISystem.Controllers.StudentController",
+    "Method": "DeleteStudent",
+    "RelativePath": "api/Student/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniAPISystem.Controllers.StudentController",
+    "Method": "UpisiNaPredmet",
+    "RelativePath": "api/Student/{studentId}/UpisiNaPredmet/{predmetId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "studentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "predmetId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniAPISystem.Controllers.UlogeController",
+    "Method": "GetAllUlogeAsync",
+    "RelativePath": "api/Uloge",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniAPISystem.Controllers.UlogeController",
+    "Method": "AddUlogaAsync",
+    "RelativePath": "api/Uloge",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "uloga",
+        "Type": "APISystem.Entity.Uloga",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

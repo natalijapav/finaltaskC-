@@ -1,8 +1,9 @@
 ﻿using APISystem.Entity;
 using APSystem.Entity;
 using Microsoft.EntityFrameworkCore;
+using System;
 
-namespace UniAPISystem.Services
+namespace UniAPISystem.Models
 {
     public class UniverzitetContext : DbContext
     {
@@ -11,13 +12,19 @@ namespace UniAPISystem.Services
 
         public DbSet<Osoba> Osobe { get; set; }
         public DbSet<Student> Studenti { get; set; }
-
         public DbSet<Profesor> Profesori { get; set; }
         public DbSet<Predmet> Predmeti { get; set; }
         public DbSet<Korisnik> Korisnici { get; set; }
         public DbSet<Uloga> Uloge { get; set; }
         public DbSet<Ocena> Ocene { get; set; }
-        public object Departmant { get; internal set; }
+
+        public UniverzitetContext(DbContextOptions<UniverzitetContext> options) : base(options) { }
+
+        public UniverzitetContext()
+        {
+        }
+
+        public object Departmant { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -69,7 +76,7 @@ namespace UniAPISystem.Services
 
                 .WithMany()
 
-                .HasForeignKey("UlogaId");
+                .HasForeignKey(k => k.UlogaId);
 
             modelBuilder.Entity<Korisnik>()
 
@@ -95,6 +102,9 @@ namespace UniAPISystem.Services
 
                 );
 
+            modelBuilder.Entity<Student>()
+            .HasMany(s => s.Predmeti)
+            .WithMany(p => p.Studenti); 
 
 
             modelBuilder.Entity<Finansije>()
@@ -102,6 +112,8 @@ namespace UniAPISystem.Services
                 .ToTable("Finansiranja")
 
                 .HasKey(f => f.FinId);
+
+
 
         }
 

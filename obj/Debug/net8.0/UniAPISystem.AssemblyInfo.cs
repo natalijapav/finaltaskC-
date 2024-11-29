@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UniAPISystem")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9e5449c3acd9d4f5c2f6f145210838332338683c")]
 [assembly: System.Reflection.AssemblyProductAttribute("UniAPISystem")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UniAPISystem")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
